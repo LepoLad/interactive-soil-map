@@ -13,13 +13,13 @@ map.getPane('ahupuaaPane').style.zIndex = 500;
 map.createPane('seriesPane');
 map.getPane('seriesPane').style.zIndex = 450;
 
-const urlLanai = 'https://lepolad.github.io/interactive-soil-maps/lanai_soil_combined.json';
-const urlOahu = 'https://lepolad.github.io/interactive-soil-maps/oahu_soil_combined.json';
-const urlMolokai = 'https://lepolad.github.io/interactive-soil-maps/molokai_soil_combined.json';
-const urlMaui = 'https://lepolad.github.io/interactive-soil-maps/maui_soil_combined.json';
-const urlKauai = 'https://lepolad.github.io/interactive-soil-maps/kauai_soil_combined.json';
-const urlHawaii = 'https://lepolad.github.io/interactive-soil-maps/hawaii_soil_combined.json';
-const urlKahoolawe = 'https://lepolad.github.io/interactive-soil-maps/kahoolawe_soil_combined.json';
+const urlLanai = 'https://lepolad.github.io/interactive-soil-map/poly_files/lanai_soil_combined.json';
+const urlOahu = 'https://lepolad.github.io/interactive-soil-map/poly_files/oahu_soil_combined.json';
+const urlMolokai = 'https://lepolad.github.io/interactive-soil-map/poly_files/molokai_soil_combined.json';
+const urlMaui = 'https://lepolad.github.io/interactive-soil-map/poly_files/maui_soil_combined.json';
+const urlKauai = 'https://lepolad.github.io/interactive-soil-map/poly_files/kauai_soil_combined.json';
+const urlHawaii = 'https://lepolad.github.io/interactive-soil-map/poly_files/hawaii_soil_combined.json';
+const urlKahoolawe = 'https://lepolad.github.io/interactive-soil-map/poly_files/kahoolawe_soil_combined.json';
 
 const groupProperty = 'order';
 
@@ -130,7 +130,7 @@ async function getAndGroupData(url, property){
 
     }
     catch(error){
-        console.error('something stay more broken than your teeth', error);    
+        console.error(`something stay more broken than your teeth on ${url}, error: `, error);    
     }
 }
 
